@@ -20,17 +20,23 @@
         <div>
         <label for="fname">
           First name:
-          <input id="fname" type="text" autofocus  />
+          <input id="fname" type="text" autofocus required />
         </label>
         <div>
         <label for="lname">
           Last name:
-          <input id="lname" type="text"/>
+          <input id="lname" type="text" required/>
         </label>
+        <div>
+          <label for="phone" phone number:>
+            Phone Number:
+            <input id="phone" type="text" placeholder="815-501-8359"/>
+          </label>
+          <div>
         <div>
         <label for="email">
           Email Adress:
-          <input id="email" type="email" />
+          <input id="email" type="email" required/>
         </label>
         <div>
       </fieldset>
@@ -38,12 +44,44 @@
             <label for="cars">Choose a car:
 
             <select name="cars" id="cars">
+                <option value="">Please select a response...</option>
                 <option value="volvo">Volvo</option>
                 <option value="saab">Saab</option>
                 <option value="mercedes">Mercedes</option>
                 <option value="audi">Audi</option>
             </select>
         </label>
+      </div>
+
+      <div>
+        <label for="female">
+          <input type="radio" id="female" name="gender" value="female"> Female 
+      </label>
+      
+      <label for="male">
+          <input type="radio" id="male" name="gender" value="male"> Male
+      </label>
+      
+      <label for="non-binary">
+      <input type="radio" id="non-binary" name="gender" value="non-binary">Non-binary
+      </label>  
+      </div>
+
+      <div>
+        <fieldset>
+          <legend> Choose your favorite activities </legend>
+            <label for="running">
+              <input type="checkbox" id="running" name="activities" value ="running"> Running
+            </label>    
+        
+            <label for="biking">
+              <input type="checkbox" id="biking" name="activities" value="biking"> Biking
+            </label>
+        
+            <label for="reading">
+              <input type="checkbox" id="reading" name="activities" value="reading"> Reading
+            </label>
+        </fieldset> 
       </div>
     </form>
 
